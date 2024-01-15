@@ -1,8 +1,14 @@
+---
+import { getI18n } from '../i18n'
+const i18N = getI18n({ currentLocale: Astro?.currentLocale ?? 'es'})
+
+---
+
 <section class="text-xl text-left px-20 max-w-[70ch] text-pretty mx-auto my-24">
   <img src="./logo.png" alt="logo" class="w-16 mb-10 m-auto" />
 
   <h1 class="text-5xl font-semibold text-center text-wrap mx-auto mb-10 tracking-wide">
-    Bienvenidos a los Premios ESLAND
+    {i18N.INTRO_TITLE}
   </h1>
 
   <p>
