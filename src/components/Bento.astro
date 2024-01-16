@@ -6,11 +6,11 @@ import BentoItem from './BentoItem.astro'
 <section
   class={`
     w-full max-w-[1300px]
-    grid grid-cols-10 auto-rows-[30rem] gap-4
-    mx-auto p-20
+    grid lg:grid-cols-10 auto-rows-[30rem] gap-4
+    mx-auto p-26 md:p-12 lg:p-20
   `}
 >
-  <BentoItem class="col-span-10 md:col-span-4" title="ANDORRA: EL CÉNIT DE LOS PREMIOS ESLAND">
+  <BentoItem class="col-span-10 lg:col-span-4" title="ANDORRA: EL CÉNIT DE LOS PREMIOS ESLAND">
     <div
       slot="image"
       class="absolute left-0 right-0 bottom-0 h-full group-hover:scale-110 transition-scale duration-1000 ease-in-out opacity-90 bg-center bg-cover bg-no-repeat bg-blue-950 bg-blend-luminosity -z-10"
@@ -21,18 +21,7 @@ import BentoItem from './BentoItem.astro'
     </p>
   </BentoItem>
 
-  <BentoItem class="col-span-10 md:col-span-6" title="LA ALFOMBRA BLANCA" subtitle="16 de febrero de 2024">
-    <div
-      slot="image"
-      class="absolute left-0 right-0 bottom-0 h-full group-hover:scale-110 transition-scale duration-1000 ease-in-out opacity-90 bg-center bg-cover bg-no-repeat bg-[#010a2e] bg-blend-luminosity -z-10"
-      style="background-image: url('./pistas.webp')"
-    ></div>
-    <p slot="content" class="max-w-xl text-xl">
-      Este año, el momento de la alfombra azul será sustituido y mejorado, gracias a los increíbles paisajes andorranos, por una <strong>alfombra blanca en plena nieve</strong>, situada en las <strong>pistas de esquí de Andorra.</strong>
-    </p>
-  </BentoItem>
-
-  <BentoItem class="col-span-10 md:col-span-6" title="LA GALA" subtitle="17 de febrero de 2024">
+  <BentoItem class="col-span-10 lg:col-span-6" title="LA GALA" subtitle="17 de febrero de 2024">
     <div
       slot="image"
       class="absolute left-0 right-0 bottom-0 h-full group-hover:scale-110 transition-scale duration-1000 ease-in-out opacity-90 bg-center bg-cover bg-no-repeat bg-[#01356d] bg-blend-luminosity -z-10"
@@ -43,7 +32,18 @@ import BentoItem from './BentoItem.astro'
     </p>
   </BentoItem>
 
-  <BentoItem class="col-span-10 md:col-span-4" title="DISFRUTA DEL REDDIT DE LA COMUNIDAD">
+  <BentoItem class="col-span-10 lg:col-span-6" title="LA ALFOMBRA BLANCA" subtitle="16 de febrero de 2024">
+    <div
+      slot="image"
+      class="absolute left-0 right-0 bottom-0 h-full group-hover:scale-110 transition-scale duration-1000 ease-in-out opacity-90 bg-center bg-cover bg-no-repeat bg-[#010a2e] bg-blend-luminosity -z-10"
+      style="background-image: url('./pistas.webp')"
+    ></div>
+    <p slot="content" class="max-w-xl text-xl">
+      Este año, el momento de la alfombra azul será sustituido y mejorado, gracias a los increíbles paisajes andorranos, por una <strong>alfombra blanca en plena nieve</strong>, situada en las <strong>pistas de esquí de Andorra.</strong>
+    </p>
+  </BentoItem>
+
+  <BentoItem class="col-span-10 lg:col-span-4" title="DISFRUTA DEL REDDIT DE LA COMUNIDAD">
     <div
       slot="image"
       class="absolute left-0 right-0 bottom-0 h-full group-hover:scale-110 transition-scale duration-1000 ease-in-out opacity-90 bg-center bg-cover bg-no-repeat bg-[#000527] bg-blend-luminosity -z-10"
