@@ -1,0 +1,13 @@
+---
+import Layout from '../../layouts/Layout.astro'
+
+import { getI18n } from '../../i18n'
+const i18N = getI18n({ currentLocale: Astro?.currentLocale ?? 'es'})
+---
+
+<Layout
+  title='archivo'
+  description='archivo'
+  >
+  <HeroContainer />
+</Layout>
