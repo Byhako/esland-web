@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro'
 
 import { getI18n } from '../../i18n'
+import HeroContainer from '../HeroContainer.astro'
 const i18N = getI18n({ currentLocale: Astro?.currentLocale ?? 'es'})
 ---
 
@@ -9,5 +10,7 @@ const i18N = getI18n({ currentLocale: Astro?.currentLocale ?? 'es'})
   title='archivo'
   description='archivo'
   >
-  <HeroContainer />
+  <HeroContainer img="./hero.webp" />
+
+  <div class="h-[500px]"></div>
 </Layout>
