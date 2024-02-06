@@ -8,5 +8,7 @@ const { img } = Astro.props
   style={`clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 50% 100%, 0 75%); background-image: url('${ img }')`}
   class="bg-no-repeat bg-cover w-full relative md:h-[90vh] h-[70vh]"
 >
-
+  <div class="absolute inset-0 m-auto w-full h-full flex justify-center flex-col items-center">
+    <slot />
+  </div>
 </div>
