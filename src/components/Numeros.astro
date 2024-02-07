@@ -2,25 +2,35 @@
 import { CountUp } from "./CountUp"
 ---
 
-<section class="max-w-6xl mx-auto py-20 px-20">
-  <h2 class="text-5xl text-center text-balance">Los ESLAND en números</h2>
-  
-  <div>
-    <span class="text-8xl font-bold">
-      <CountUp initial={0} final={227} />
+<section class="max-w-8xl mx-auto py-20">
+  <h2 class="text-4xl md:text-8xl text-center text-balance mb-10 uppercase">
+    Los ESLAND en números
+  </h2>
+
+  <div class="flex justify-center items-center flex-col mb-10 md:mb-5">
+    <span class="number text-5xl md:text-8xl font-bold text-center tabular-nums tracking-tighter">
+      <CountUp client:visible initial={0} final={227} />
     </span>
-    <span>noticias en prensa</span>
+    <span class="text-xl md:text-3xl uppercase opacity-70">noticias en prensa</span>
   </div>
   
-  <div>
-    <span class="text-8xl font-bold">
-      + 69.9 M</span>
-    <span>de visualizaciones</span>
+  <div class="flex justify-center items-center flex-col mb-10 md:mb-5">
+    <span class="number text-5xl md:text-8xl font-bold tabular-nums tracking-tighter">
+      + <CountUp client:visible initial={0} final={69.9} decimals={1} /> M
+    </span>
+    <span class="text-xl md:text-3xl uppercase opacity-70">de visualizaciones</span>
   </div>
   
-  <div>
-    <span class="text-8xl font-bold">
-      + 0 M</span>
-    <span>en medios ganados</span>
+  <div class="flex justify-center items-center flex-col">
+    <span class="number text-5xl md:text-8xl font-bold tabular-nums tracking-tighter">
+      + <CountUp client:visible initial={0} final={3.2} decimals={1} /> M€</span>
+    <span class="text-xl md:text-3xl uppercase opacity-70">en medios ganados</span>
   </div>
 </section>
+
+
+<style>
+  .number {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+</style>
