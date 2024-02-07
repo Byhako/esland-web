@@ -13,3 +13,9 @@ https://bentogrids.com/
 https://svgl.vercel.app/
 
 https://squoosh.app/
+
+https://floating-ui.com/
+
+https://www.lightgalleryjs.com/
+
+https://photoswipe.com/
